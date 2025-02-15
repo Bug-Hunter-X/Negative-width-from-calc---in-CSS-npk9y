@@ -1,0 +1,1 @@
+The CSS property `calc()` is used incorrectly to calculate the width of an element based on the viewport width. The calculation is `width: calc(100vw - 20px);`. However, when the viewport width is less than 20px, the calculated width becomes negative, which is not valid and causes unexpected behavior.  The element might disappear or render incorrectly.

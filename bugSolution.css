@@ -1,0 +1,6 @@
+The solution is to use the `max()` function to ensure the width never becomes negative.  The corrected CSS would be:
+
+```css
+width: calc(max(0, 100vw - 20px));
+```
+This ensures that if `100vw - 20px` evaluates to a negative value, the width will be set to 0 instead.
